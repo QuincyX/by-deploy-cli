@@ -1,0 +1,33 @@
+{
+  "name": "by-deploy",
+  "version": "1.0.0",
+  "description": "bbyy's git & ops deploy tool",
+  "main": "dist/index.js",
+  "bin": {
+    "by": "dist/index.js",
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Quincy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/inquirer": "^6.5.0",
+    "@types/mocha": "^7.0.2",
+    "@types/yargs": "^15.0.4",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chalk": "^4.0.0",
+    "inquirer": "^7.1.0",
+    "yargs": "^15.3.1"
+  }
+}
